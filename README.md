@@ -1,6 +1,6 @@
 # 4d-plugin-potrace
 
-Convert picture to vector graphics (SVG or PDF) [potrace](http://potrace.sourceforge.net)
+Convert picture to SVG or PDF using [potrace](http://potrace.sourceforge.net).
 
 ##Platform
 

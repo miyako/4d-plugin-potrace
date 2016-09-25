@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "bm_readbody_bmp(std::vector&lt;char, std::allocator&lt;char&gt; &gt;&amp;, double, potrace_bitmap_s**):4DPlugin.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "bmp_readint(std::vector&lt;char, std::allocator&lt;char&gt; &gt;&amp;, int*, int*, int, unsigned int*):4DPlugin.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "buf.at(22)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

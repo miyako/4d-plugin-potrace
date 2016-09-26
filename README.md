@@ -83,7 +83,7 @@ POTRACE_OPT_PS_CLEAR_TEXT 63
 
 ```
 //source:http://www.neuro-image.com/?page_id=2276
-$path:=Get 4D folder(Current resources folder)+"38648554_shitae2.bmp"
+$path:=Get 4D folder(Current resources folder)+"38648554_shitae2.png"
 
 READ PICTURE FILE($path;$image)
 

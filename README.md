@@ -82,19 +82,35 @@ POTRACE_OPT_PS_CLEAR_TEXT 63
 ##Example
 
 ```
-$path:=Get 4D folder(Current resources folder)+"Field_1.png"
+//source:http://www.neuro-image.com/?page_id=2276
+$path:=Get 4D folder(Current resources folder)+"38648554_shitae2.bmp"
 
 READ PICTURE FILE($path;$image)
 
-ARRAY LONGINT($keys;1)
-ARRAY TEXT($values;1)
+ARRAY LONGINT($keys;6)
+ARRAY TEXT($values;6)
 
-$keys{1}:=POTRACE_OPT_COLOR
-$values{1}:="#ff0000"
+$keys{1}:=POTRACE_OPT_CORNER_THRESHOLD  //default:1
+$values{1}:="1"
+
+$keys{2}:=POTRACE_OPT_CURVE_TOLERANCE  //default:0.2
+$values{2}:="0.2"
+
+$keys{3}:=POTRACE_OPT_USE_LONG_CURVE  //default:0
+$values{3}:="0"
+
+$keys{4}:=POTRACE_OPT_MINIMUM_SPECKLE  //default:2
+$values{4}:="1"
+
+$keys{5}:=POTRACE_OPT_TURN_POLICY  //default:POTRACE_TURN_BLACK
+$values{5}:=Char(POTRACE_TURN_BLACK)
+
+$keys{6}:=POTRACE_OPT_COLOR
+$values{6}:="#FF00FF"
 
 $svg:=Potrace ($image;POTRACE_OUTPUT_SVG;$keys;$values)
-WRITE PICTURE FILE(System folder(Desktop)+"Field_1.svg";$svg)
+WRITE PICTURE FILE(System folder(Desktop)+"test.svg";$svg)
 
 $svg:=Potrace ($image;POTRACE_OUTPUT_PDF;$keys;$values)
-WRITE PICTURE FILE(System folder(Desktop)+"Field_1.pdf";$svg)
+WRITE PICTURE FILE(System folder(Desktop)+"test.pdf";$svg)
 ```

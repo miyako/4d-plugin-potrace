@@ -72,6 +72,12 @@
     <ClCompile Include="4D Plugin API\Classes\ARRAY_TIME.cpp">
       <Filter>Source\4D Plugin API\Classes\ARRAY</Filter>
     </ClCompile>
+    <ClCompile Include="include\backend_pdf.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="include\backend_svg.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="4DPlugin.h">
@@ -139,6 +145,12 @@
     </ClInclude>
     <ClInclude Include="4D Plugin API\Classes\ARRAY_TIME.h">
       <Filter>Source\4D Plugin API\Classes\ARRAY</Filter>
+    </ClInclude>
+    <ClInclude Include="include\backend_pdf.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="include\backend_svg.h">
+      <Filter>Source</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -13,6 +13,13 @@
 #include "bitops.h"
 #include "lists.h"
 
+#ifdef _WINDOWS
+#define snprintf _snprintf 
+#define vsnprintf _vsnprintf 
+#define strcasecmp _stricmp 
+#define strncasecmp _strnicmp 
+#endif
+
 #include "backend_svg.h"
 #include "backend_pdf.h"
 

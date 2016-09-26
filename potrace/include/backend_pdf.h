@@ -2,9 +2,14 @@
    This file is part of Potrace. It is free software and it is covered
    by the GNU General Public License. See the file COPYING for details. */
 
-
 #ifndef BACKEND_PDF_H
 #define BACKEND_PDF_H
+
+#ifdef _WINDOWS
+#include <math.h>
+#include <intrin.h>
+#include <iterator>
+#endif
 
 #include "potrace.h"
 #include "curve.h"

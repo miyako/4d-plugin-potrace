@@ -984,7 +984,7 @@ void Potrace(sLONG_PTR *pResult, PackagePtr pParams)
 									{
 										char *p;
 										dim_t dimx, dimy;
-										parse_dimensions(optarg, &p, &dimx, &dimy);
+										parse_dimensions((char *)value.c_str(), &p, &dimx, &dimy);
 										if (*p == 0 && dimx.d == 0 && dimy.d == 0 && dimx.x != 0.0 && dimy.x != 0.0) {
 											info.rx = dimx.x;
 											info.ry = dimy.x;
@@ -995,7 +995,7 @@ void Potrace(sLONG_PTR *pResult, PackagePtr pParams)
 									{
 										char *p;
 										dim_t dimx, dimy;
-										parse_dimensions(optarg, &p, &dimx, &dimy);
+										parse_dimensions((char *)value.c_str(), &p, &dimx, &dimy);
 										if (*p == 0 && dimx.d == 0 && dimy.d == 0) {
 											info.sx = dimx.x;
 											info.sy = dimy.x;

@@ -52,6 +52,12 @@
     <ClCompile Include="..\4D Plugin API\Classes\C_TEXT.cpp">
       <Filter>Source\4D Plugin API\Classes\C</Filter>
     </ClCompile>
+    <ClCompile Include="..\include\backend_svg.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\backend_pdf.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\4DPlugin.h">
@@ -116,6 +122,12 @@
     </ClInclude>
     <ClInclude Include="..\4D Plugin API\Classes\C_REAL.h">
       <Filter>Source\4D Plugin API\Classes\C</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\backend_svg.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\backend_pdf.h">
+      <Filter>Source</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

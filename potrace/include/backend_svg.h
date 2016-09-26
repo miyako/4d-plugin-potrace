@@ -5,6 +5,12 @@
 #ifndef BACKEND_SVG_H
 #define BACKEND_SVG_H
 
+#ifdef _WINDOWS
+#include <math.h>
+#include <intrin.h>
+#include <iterator>
+#endif
+
 #include "potrace.h"
 #include "curve.h"
 #include "lists.h"

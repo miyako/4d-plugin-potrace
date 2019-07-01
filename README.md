@@ -4,7 +4,7 @@ Convert picture to SVG or PDF with [potrace](http://potrace.sourceforge.net).
 
 ___deprecated___ 
 
-use [4d-plugin-text-input-context](https://github.com/miyako/4d-plugin-text-input-context)
+use [4d-plugin-potrace-v2](https://github.com/miyako/4d-plugin-potrace-v2)
 
 ### Platform
 
